@@ -77,3 +77,17 @@ while true; do
         10)
             # Opción para editar README.md
             if [ -f README.md ]; then
+                nano README.md
+            else
+                echo "El archivo README.md no existe."
+            fi
+            ;;
+        0)
+            echo "Saliendo..."
+            exit 0
+            ;;
+        *)
+            echo "Opción no válida."
+            ;;
+    esac
+done
